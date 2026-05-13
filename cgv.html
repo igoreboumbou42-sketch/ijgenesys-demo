@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions Générales de Vente — IJ Genesys</title>
+<meta name="description" content="Conditions Générales de Vente d'IJ Genesys, studio digital basé à Paris.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bleu-nuit: #1A2B4A;
+  --bleu-foncé: #0F1A2E;
+  --corail: #FF6B5B;
+  --corail-soft: #FF8F82;
+  --corail-pale: #FFE5DD;
+  --peche: #FFD4C9;
+  --beige: #F5EBDD;
+  --crème: #FBF6EF;
+  --gris-clair: #F5F5F5;
+  --gris-moyen: #888;
+  --gris-texte: #555;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--crème);
+  color: var(--bleu-nuit);
+  line-height: 1.7;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(251, 246, 239, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bleu-nuit);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--corail); }
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--bleu-nuit);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--corail); }
+
+.nav-back {
+  background: var(--corail);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* HERO CGV */
+.cgv-hero {
+  background: linear-gradient(135deg, var(--bleu-nuit) 0%, var(--bleu-foncé) 100%);
+  color: white;
+  padding: 140px 32px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cgv-hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 107, 91, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.cgv-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cgv-eyebrow {
+  display: inline-block;
+  background: rgba(255, 107, 91, 0.15);
+  border: 1px solid var(--corail);
+  color: var(--corail);
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.cgv-hero h1 {
+  font-family: 'Cormorant', serif;
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.cgv-hero p {
+  font-size: 17px;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cgv-date {
+  margin-top: 24px;
+  font-size: 13px;
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+}
+
+/* CGV CONTENT */
+.cgv-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  background: white;
+  border-radius: 24px;
+  margin-top: -40px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+}
+
+/* Table of contents */
+.toc {
+  background: var(--gris-clair);
+  border-left: 4px solid var(--corail);
+  padding: 24px 28px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+
+.toc h3 {
+  font-size: 12px;
+  color: var(--corail);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.toc ol {
+  list-style: none;
+  counter-reset: toc;
+  columns: 2;
+  column-gap: 30px;
+}
+
+.toc li {
+  counter-increment: toc;
+  font-size: 13px;
+  padding: 4px 0;
+  break-inside: avoid;
+}
+
+.toc li::before {
+  content: counter(toc) ". ";
+  color: var(--corail);
+  font-weight: 700;
+}
+
+.toc a {
+  color: var(--bleu-nuit);
+  text-decoration: none;
+}
+
+.toc a:hover { color: var(--corail); }
+
+/* Articles */
+.article {
+  margin-bottom: 50px;
+  scroll-margin-top: 100px;
+}
+
+.article h2 {
+  font-family: 'Cormorant', serif;
+  font-size: 30px;
+  color: var(--bleu-nuit);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--corail);
+  display: inline-block;
+}
+
+.article h3 {
+  font-size: 18px;
+  color: var(--corail);
+  margin: 24px 0 12px;
+  font-weight: 600;
+}
+
+.article p {
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 15px;
+}
+
+.article ul {
+  margin: 12px 0 16px 24px;
+}
+
+.article li {
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 15px;
+}
+
+.article strong {
+  color: var(--bleu-nuit);
+  font-weight: 600;
+}
+
+.article a {
+  color: var(--corail);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Préambule highlight */
+.preambule {
+  background: var(--corail-pale);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  border-left: 4px solid var(--corail);
+}
+
+.preambule h2 {
+  border: none;
+  padding: 0;
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* Footer */
+.cgv-footer {
+  background: var(--bleu-nuit);
+  color: white;
+  padding: 60px 32px 40px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.cgv-footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cgv-footer-logo span { color: var(--corail); }
+
+.cgv-footer-info {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.cgv-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.cgv-footer a {
+  color: var(--corail-soft);
+  text-decoration: none;
+}
+
+/* Print */
+@media print {
+  .nav, .cgv-hero, .cgv-footer, .toc { display: none; }
+  body { background: white; }
+  .cgv-content { box-shadow: none; margin-top: 0; padding: 0; max-width: none; }
+  .article { page-break-inside: avoid; }
+}
+
+@media (max-width: 700px) {
+  .nav-links { display: none; }
+  .toc ol { columns: 1; }
+  .cgv-content { padding: 40px 24px; border-radius: 16px; }
+  .article h2 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">IJ <span>Genesys</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#tarifs">Tarifs</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<!-- HERO -->
+<section class="cgv-hero">
+  <div class="cgv-hero-content">
+    <div class="cgv-eyebrow">⚖ Document légal</div>
+    <h1>Conditions Générales de Vente</h1>
+    <p>Ce document régit l'ensemble des relations contractuelles entre IJ Genesys et ses clients.</p>
+    <p class="cgv-date">Dernière mise à jour : 12 mai 2026</p>
+  </div>
+</section>
+
+<!-- CONTENU -->
+<main class="cgv-content">
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Sommaire</h3>
+    <ol>
+      <li><a href="#article-1">Identification du Prestataire</a></li>
+      <li><a href="#article-2">Description des services</a></li>
+      <li><a href="#article-3">Devis et commande</a></li>
+      <li><a href="#article-4">Tarifs et paiement</a></li>
+      <li><a href="#article-5">Délais de livraison</a></li>
+      <li><a href="#article-6">Droit de rétractation</a></li>
+      <li><a href="#article-7">Responsabilité</a></li>
+      <li><a href="#article-8">Propriété intellectuelle</a></li>
+      <li><a href="#article-9">Confidentialité</a></li>
+      <li><a href="#article-10">RGPD</a></li>
+      <li><a href="#article-11">Résiliation</a></li>
+      <li><a href="#article-12">Droit applicable</a></li>
+      <li><a href="#article-13">Médiation</a></li>
+      <li><a href="#article-14">Dispositions diverses</a></li>
+    </ol>
+  </div>
+
+  <!-- PRÉAMBULE -->
+  <div class="preambule">
+    <h2 style="font-family: 'Cormorant', serif; font-size: 28px; color: var(--bleu-nuit);">Préambule</h2>
+    <p>Les présentes Conditions Générales de Vente (CGV) régissent les relations contractuelles entre <strong>IJ Genesys</strong>, Micro-entreprise dont le siège social est situé à Paris, immatriculée sous le numéro SIRET [À compléter], code APE 6201Z (ci-après « le Prestataire »), et toute personne physique ou morale souhaitant bénéficier de ses services (ci-après « le Client »).</p>
+    <p>Toute commande passée auprès du Prestataire implique l'acceptation sans réserve par le Client des présentes CGV.</p>
+  </div>
+
+  <!-- ARTICLE 1 -->
+  <section class="article" id="article-1">
+    <h2>Article 1 — Identification du Prestataire</h2>
+    <ul>
+      <li><strong>Dénomination sociale :</strong> IJ Genesys</li>
+      <li><strong>Forme juridique :</strong> Micro-entreprise</li>
+      <li><strong>Représentant légal :</strong> Igor [Nom]</li>
+      <li><strong>Siège social :</strong> [Adresse complète], Paris</li>
+      <li><strong>SIRET :</strong> [À compléter]</li>
+      <li><strong>Code APE :</strong> 6201Z (Programmation informatique)</li>
+      <li><strong>Email :</strong> ijgenesys@gmail.com</li>
+      <li><strong>Téléphone :</strong> 06 47 73 84 03</li>
+    </ul>
+  </section>
+
+  <!-- ARTICLE 2 -->
+  <section class="article" id="article-2">
+    <h2>Article 2 — Description des services</h2>
+    <p>IJ Genesys propose des prestations de création de sites web, de maintenance, d'hébergement et de référencement (SEO) pour les professionnels et les commerces.</p>
+    <p>Les prestations sont proposées sous forme de 3 formules :</p>
+    <ul>
+      <li><strong>Essentielle :</strong> 1 490 € — Site vitrine 5 sections</li>
+      <li><strong>Signature :</strong> 2 490 € — Site complet 8 sections avec réservation</li>
+      <li><strong>Excellence :</strong> 3 990 € — Site premium 11+ sections avec blog et e-commerce</li>
+    </ul>
+    <p>Le détail précis de chaque prestation est précisé dans le devis remis au Client avant tout engagement.</p>
+  </section>
+
+  <!-- ARTICLE 3 -->
+  <section class="article" id="article-3">
+    <h2>Article 3 — Devis et commande</h2>
+    <p>Tout devis émis par le Prestataire est valable <strong>30 (trente) jours</strong> à compter de sa date d'émission. Passé ce délai, le Prestataire se réserve le droit de modifier ses tarifs.</p>
+    <p>La commande est considérée comme ferme et définitive à réception du devis signé portant la mention manuscrite « Bon pour accord » accompagné du paiement de l'acompte.</p>
+  </section>
+
+  <!-- ARTICLE 4 -->
+  <section class="article" id="article-4">
+    <h2>Article 4 — Tarifs et modalités de paiement</h2>
+    
+    <h3>4.1 — Tarifs</h3>
+    <p>Les tarifs sont indiqués en euros, toutes taxes comprises (TTC). En application de l'article 293 B du Code Général des Impôts, la <strong>TVA n'est pas applicable</strong> (franchise en base).</p>
+    
+    <h3>4.2 — Modalités de paiement</h3>
+    <p>Le paiement s'effectue comme suit :</p>
+    <ul>
+      <li><strong>40 % du montant total</strong> à la signature du devis (acompte)</li>
+      <li><strong>60 % à la livraison</strong> du site (solde)</li>
+    </ul>
+    <p>Les paiements sont effectués par virement bancaire ou chèque à l'ordre de IJ Genesys.</p>
+    
+    <h3>4.3 — Retard de paiement</h3>
+    <p>Tout retard de paiement entraîne de plein droit, sans mise en demeure préalable, l'application de <strong>pénalités égales à 3 fois le taux d'intérêt légal</strong> en vigueur, ainsi qu'une indemnité forfaitaire de 40 € pour frais de recouvrement (Art. L441-10 et D441-5 du Code de Commerce).</p>
+  </section>
+
+  <!-- ARTICLE 5 -->
+  <section class="article" id="article-5">
+    <h2>Article 5 — Délais de livraison</h2>
+    <p>Le délai de livraison est précisé sur le devis. Il court à compter de la date de réception de l'acompte et de l'ensemble des éléments nécessaires à la réalisation du site (textes, photos, accès, etc.).</p>
+    <p>Tout retard imputable au Client (validation tardive, transmission incomplète des éléments) prolongera d'autant le délai de livraison, sans que cela puisse être reproché au Prestataire.</p>
+  </section>
+
+  <!-- ARTICLE 6 -->
+  <section class="article" id="article-6">
+    <h2>Article 6 — Droit de rétractation</h2>
+    <p>Conformément à l'article L221-28 du Code de la Consommation, le droit de rétractation ne peut être exercé pour les contrats de fourniture de services pleinement exécutés avant la fin du délai de rétractation, ni pour les biens confectionnés selon les spécifications du Client.</p>
+    <p>Pour les <strong>clients professionnels (B2B)</strong>, le droit de rétractation ne s'applique pas.</p>
+  </section>
+
+  <!-- ARTICLE 7 -->
+  <section class="article" id="article-7">
+    <h2>Article 7 — Responsabilité du Prestataire</h2>
+    <p>Le Prestataire est soumis à une <strong>obligation de moyens</strong> dans l'exécution de ses prestations. Sa responsabilité ne pourra être engagée qu'en cas de faute prouvée.</p>
+    <p>Le Prestataire ne saurait être tenu pour responsable :</p>
+    <ul>
+      <li>Des dysfonctionnements liés à la connexion internet du Client</li>
+      <li>Des cas de force majeure (Art. 1218 du Code Civil)</li>
+      <li>D'une utilisation non conforme du site par le Client ou des tiers</li>
+      <li>Du contenu fourni par le Client (textes, images, etc.)</li>
+    </ul>
+  </section>
+
+  <!-- ARTICLE 8 -->
+  <section class="article" id="article-8">
+    <h2>Article 8 — Propriété intellectuelle</h2>
+    <p>Le Client devient propriétaire du site une fois le paiement intégral effectué. Le Client garantit au Prestataire que les éléments fournis (textes, images, logos) sont libres de droits ou qu'il dispose des autorisations nécessaires.</p>
+    <p>Le Prestataire conserve le droit de mentionner son nom et un lien vers son site dans le pied de page du site livré (mention « Site créé par IJ Genesys »), sauf accord contraire négocié.</p>
+    <p>Le Prestataire pourra utiliser le site comme référence dans son portfolio commercial, sauf opposition expresse du Client.</p>
+  </section>
+
+  <!-- ARTICLE 9 -->
+  <section class="article" id="article-9">
+    <h2>Article 9 — Confidentialité</h2>
+    <p>Le Prestataire s'engage à respecter la confidentialité de toutes les informations communiquées par le Client dans le cadre de la prestation.</p>
+  </section>
+
+  <!-- ARTICLE 10 -->
+  <section class="article" id="article-10">
+    <h2>Article 10 — Protection des données personnelles (RGPD)</h2>
+    <p>Le Prestataire s'engage à respecter le Règlement Général sur la Protection des Données (<strong>RGPD - UE 2016/679</strong>) et la loi Informatique et Libertés. Les données personnelles collectées dans le cadre de la prestation sont utilisées uniquement pour l'exécution du contrat.</p>
+    <p>Le Client dispose d'un <strong>droit d'accès, de rectification, d'effacement, de portabilité et d'opposition</strong> concernant ses données personnelles, exerçable à l'adresse : <a href="mailto:ijgenesys@gmail.com">ijgenesys@gmail.com</a>.</p>
+  </section>
+
+  <!-- ARTICLE 11 -->
+  <section class="article" id="article-11">
+    <h2>Article 11 — Résiliation</h2>
+    <p>En cas de manquement par l'une des parties à ses obligations, l'autre partie pourra, après mise en demeure restée sans effet pendant 30 jours, résilier le contrat de plein droit, sans préjudice de tous dommages-intérêts.</p>
+    <p>En cas de résiliation anticipée à l'initiative du Client, <strong>l'acompte versé reste acquis au Prestataire</strong> à titre d'indemnité forfaitaire.</p>
+  </section>
+
+  <!-- ARTICLE 12 -->
+  <section class="article" id="article-12">
+    <h2>Article 12 — Droit applicable et juridiction</h2>
+    <p>Les présentes CGV sont régies par le <strong>droit français</strong>. En cas de litige, les parties s'efforceront de trouver une solution amiable avant tout recours judiciaire.</p>
+    <p>À défaut d'accord amiable, tout litige sera de la compétence exclusive du <strong>Tribunal de Commerce de Paris</strong> pour les clients professionnels, ou des tribunaux compétents selon le droit commun pour les consommateurs.</p>
+  </section>
+
+  <!-- ARTICLE 13 -->
+  <section class="article" id="article-13">
+    <h2>Article 13 — Médiation de la consommation</h2>
+    <p>Conformément à l'article L612-1 du Code de la Consommation, le Client consommateur a le droit de recourir gratuitement à un médiateur de la consommation en cas de litige.</p>
+    <p>Le médiateur compétent peut être contacté via la plateforme européenne de règlement en ligne des litiges : <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a></p>
+  </section>
+
+  <!-- ARTICLE 14 -->
+  <section class="article" id="article-14">
+    <h2>Article 14 — Dispositions diverses</h2>
+    <p>Si l'une des clauses des présentes CGV était déclarée nulle ou inapplicable, les autres clauses resteraient en vigueur.</p>
+    <p>Le Prestataire se réserve le droit de modifier les présentes CGV à tout moment. Les CGV applicables sont celles en vigueur à la date de la commande.</p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="cgv-footer">
+  <div class="cgv-footer-logo">IJ <span>Genesys</span></div>
+  <p class="cgv-footer-info">Studio digital · Paris · Votre site, notre genèse.</p>
+  <p class="cgv-footer-info">
+    <a href="mailto:ijgenesys@gmail.com">ijgenesys@gmail.com</a> · 
+    <a href="tel:+33647738403">06 47 73 84 03</a>
+  </p>
+  <div class="cgv-footer-bottom">
+    © 2026 IJ Genesys · Tous droits réservés · <a href="index.html">Retour à l'accueil</a>
+  </div>
+</footer>
+
+</body>
+</html>

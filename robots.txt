@@ -1,0 +1,38 @@
+# IJ Genesys - robots.txt
+# Studio digital Paris
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /*?print
+
+# Crawl-delay courtois
+Crawl-delay: 1
+
+# Bots IA - autorisés (we want to be discovered)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bots malveillants - bloqués
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap
+Sitemap: https://ijgenesys.github.io/ijgenesys/sitemap.xml

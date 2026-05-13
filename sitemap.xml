@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- VERSION SPÉCIALE MICHEL DERVYN -->
+  
+  <!-- PAGE PRINCIPALE -->
+  <url>
+    <loc>https://ijgenesys.github.io/ijgenesys-michel-dervyn/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- DÉMOS PERSONNALISÉES MICHEL DERVYN -->
+  <url>
+    <loc>https://ijgenesys.github.io/ijgenesys-michel-dervyn/demo-michel-dervyn-essentielle.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://ijgenesys.github.io/ijgenesys-michel-dervyn/demo-michel-dervyn-signature.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://ijgenesys.github.io/ijgenesys-michel-dervyn/demo-michel-dervyn-excellence.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <!-- PAGES LÉGALES -->
+  <url>
+    <loc>https://ijgenesys.github.io/ijgenesys-michel-dervyn/mentions-legales.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ijgenesys.github.io/ijgenesys-michel-dervyn/politique-confidentialite.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ijgenesys.github.io/ijgenesys-michel-dervyn/cookies.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ijgenesys.github.io/ijgenesys-michel-dervyn/cgv.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

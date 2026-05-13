@@ -1,0 +1,16 @@
+/* TEAM */
+Founder & Lead Designer: Igor
+Co-Founder & Developer: Jules
+Contact: ijgenesys@gmail.com
+Location: Paris, France
+
+/* SITE */
+Last update: 2026/05/12
+Standards: HTML5, CSS3, JavaScript ES2022
+Language: French
+Components: Custom CSS (no frameworks)
+Fonts: Inter, Cormorant Garamond
+IDE: VS Code
+
+/* THANKS */
+Our clients, who trust us with their digital presence.
